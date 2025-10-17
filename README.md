@@ -43,7 +43,23 @@ HF_API_URL=https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Inst
 HF_API_TOKEN=hf_your_token
 CONTAINER_NAME=minimal-rag_app
 ```
-### 5. Vector Database Setup
+
+### 5.Install Ollama CLI**: Ollama is required for managing and running local LLM models.
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+- **Pull the Latest LLM Image**: After installing ollama, pull the latest image assuming you have docker already installed. This project is built with `llama3.2`
+
+```bash
+ollama pull llama3.2
+
+# verify llama3.2 has been successfully pulled
+ollama list
+
+```
+
+### 6. Vector Database Setup
 
 ```bash
 cd Qdrant
@@ -65,7 +81,6 @@ docker-compose up -d --build
 
 ### Arhictecture overview
 
-[]("")
 ![architecture](./results/minimal-rag.png)
 
 
