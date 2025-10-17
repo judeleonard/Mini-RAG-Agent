@@ -92,9 +92,9 @@ docker-compose up -d --build
    - Chosen over Pinecone/Weaviate for offline deployment and easy Docker setup.
 
 3. **Embedding Generation**
-   - Uses `SentenceTransformerEmbeddings` from `langchain_community.embeddings`.
+   - Uses `SentenceTransformer` from HuggingFace.
    - Provides high-quality sentence-level representations.
-   - Combined with `RecursiveCharacterTextSplitter` for chunking large documents.
+   - Combined with document text chunking for chunking large documents.
 
 4. **Configurable Backends**
    - Optional support for Hugging Face Inference API (fallback backend).
