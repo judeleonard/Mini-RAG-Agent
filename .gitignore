@@ -1,6 +1,9 @@
 .venv
 Quadrant/qdrant_data/*
 __pycache__/*
-test/__pycache__/*
+tests/__pycache__/*
 .env
 .pytest_cache/*
+
+app/__pycache__/*
+app/utils/__pycache__/*
