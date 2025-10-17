@@ -1,0 +1,10 @@
+langchain==0.3.9
+langchain-ollama==0.3.10
+langchain-community==0.3.9
+sentence-transformers==3.3.1
+fastapi==0.115.0
+pydantic==2.9.2
+uvicorn==0.30.6
+pytest==8.4.1
+pytest-asyncio==1.2.0
+qdrant-client
